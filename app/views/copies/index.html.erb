@@ -1,0 +1,45 @@
+<h2><%= @user.name%>'s Books</h2>
+<table class="table table-hover table-striped table-responsive">
+  <thead>
+    <th>Author</th>
+    <th>Title</th>
+    <th>Publisher</th>
+    <th>Publication Year</th>
+    <th>ISBN13</th>
+    <th>Format</th>
+    <th>Edit</th>
+    <th>Status</th>
+  </thead>
+<% @copies.each do |copy| %>
+  <tr>
+    <td><%= copy.edition.authors[0].name %></td>
+    <td><%= copy.edition.work.title %></td>
+    <td><%= copy.edition.publisher.name %></td>
+    <td><%= copy.edition.publication_year %></td>
+    <td><%= copy.edition.isbn13 %></td>
+    <td><%= copy.format.name %></td>
+    <td><%= link_to '<i class="fa fa-search" aria-hidden="true"></i>'.html_safe, user_copy_path(@user,copy), alt: "View record: #{copy.edition.work.title}" %></td>  
+    <td class="action-column">
+      <!-- download -->
+      <% if !copy.url.empty? %>
+        <%= link_to 'Download', copy.url, class: "btn btn-success", target: "_blank" %>
+      <% elsif copy.requested?(current_user) %>
+        <button class="btn btn-warning btn-requested">Requested</button>
+      <% elsif copy.loan_pending? %>
+        <%= link_to 'Review Request', loans_path, method: :get, class: "btn btn-warning" %>
+      <% elsif copy.borrowed? %>
+        Borrowed
+      <% elsif @user != current_user && copy.available?%>
+        <%= link_to 'Borrow', copy_loans_path(copy), method: :post, class: "btn btn-primary btn-borrow" %>
+      <% else %>
+        -
+      <% end %>
+    </td>
+  </tr>
+<% end %>
+</table>
+<p>
+  <% if @user == current_user %>
+    <%= link_to 'Add books', new_user_copy_path(current_user) %>
+  <% end %>
+</p>

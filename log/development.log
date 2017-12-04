@@ -1,0 +1,1677 @@
+Started GET "/" for 127.0.0.1 at 2017-12-04 13:17:58 +0100
+  
+PG::ConnectionBad (FATAL:  la base de données « sheaf_development » n'existe pas
+):
+  
+pg (0.21.0) lib/pg.rb:56:in `initialize'
+pg (0.21.0) lib/pg.rb:56:in `new'
+pg (0.21.0) lib/pg.rb:56:in `connect'
+activerecord (5.0.6) lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `connect'
+activerecord (5.0.6) lib/active_record/connection_adapters/postgresql_adapter.rb:217:in `initialize'
+activerecord (5.0.6) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `new'
+activerecord (5.0.6) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (5.0.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:729:in `new_connection'
+activerecord (5.0.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:773:in `checkout_new_connection'
+activerecord (5.0.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:752:in `try_to_checkout_new_connection'
+activerecord (5.0.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:713:in `acquire_connection'
+activerecord (5.0.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:490:in `checkout'
+activerecord (5.0.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:364:in `connection'
+activerecord (5.0.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:883:in `retrieve_connection'
+activerecord (5.0.6) lib/active_record/connection_handling.rb:128:in `retrieve_connection'
+activerecord (5.0.6) lib/active_record/connection_handling.rb:91:in `connection'
+activerecord (5.0.6) lib/active_record/migration.rb:559:in `connection'
+activerecord (5.0.6) lib/active_record/migration.rb:546:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.6) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.6) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.6) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.6) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (1.8ms)
+  Rendering /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendering /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (21.4ms)
+  [1m[35m (141.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying PRIMARY KEY)[0m
+  [1m[35m (114.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5488631408768247705);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateAuthors (20160918010614)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (79.7ms)[0m  [1m[35mCREATE TABLE "authors" ("id" serial primary key, "name" character varying)[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20160918010614"]]
+  [1m[35m (22.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateWorks (20160918011734)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (122.1ms)[0m  [1m[35mCREATE TABLE "works" ("id" serial primary key, "title" character varying, "author_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_2054133acf"
+FOREIGN KEY ("author_id")
+  REFERENCES "authors" ("id")
+)[0m
+  [1m[35m (48.8ms)[0m  [1m[35mCREATE  INDEX  "index_works_on_author_id" ON "works"  ("author_id")[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20160918011734"]]
+  [1m[35m (16.1ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreatePublishers (20160918012708)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (97.8ms)[0m  [1m[35mCREATE TABLE "publishers" ("id" serial primary key, "name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20160918012708"]]
+  [1m[35m (7.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateEditions (20160918012934)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (90.4ms)[0m  [1m[35mCREATE TABLE "editions" ("id" serial primary key, "work_id" integer, "publisher_id" integer, "publication_year" integer, "isbn10" character varying, "isbn13" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_7cedf431aa"
+FOREIGN KEY ("work_id")
+  REFERENCES "works" ("id")
+, CONSTRAINT "fk_rails_1fbbede1e4"
+FOREIGN KEY ("publisher_id")
+  REFERENCES "publishers" ("id")
+)[0m
+  [1m[35m (38.2ms)[0m  [1m[35mCREATE  INDEX  "index_editions_on_work_id" ON "editions"  ("work_id")[0m
+  [1m[35m (40.3ms)[0m  [1m[35mCREATE  INDEX  "index_editions_on_publisher_id" ON "editions"  ("publisher_id")[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20160918012934"]]
+  [1m[35m (15.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateUsers (20160918013000)
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (90.8ms)[0m  [1m[35mCREATE TABLE "users" ("id" serial primary key, "name" character varying, "phone" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20160918013000"]]
+  [1m[35m (13.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateFormats (20160918013002)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (91.4ms)[0m  [1m[35mCREATE TABLE "formats" ("id" serial primary key, "name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20160918013002"]]
+  [1m[35m (24.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateCopies (20160918013004)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (93.0ms)[0m  [1m[35mCREATE TABLE "copies" ("id" serial primary key, "user_id" integer, "acquisition_date" date, "url" character varying, "edition_id" integer, "format_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_bca4951f8e"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+, CONSTRAINT "fk_rails_7e9ea0fd77"
+FOREIGN KEY ("edition_id")
+  REFERENCES "editions" ("id")
+, CONSTRAINT "fk_rails_7b485b5026"
+FOREIGN KEY ("format_id")
+  REFERENCES "formats" ("id")
+)[0m
+  [1m[35m (48.3ms)[0m  [1m[35mCREATE  INDEX  "index_copies_on_user_id" ON "copies"  ("user_id")[0m
+  [1m[35m (67.0ms)[0m  [1m[35mCREATE  INDEX  "index_copies_on_edition_id" ON "copies"  ("edition_id")[0m
+  [1m[35m (46.2ms)[0m  [1m[35mCREATE  INDEX  "index_copies_on_format_id" ON "copies"  ("format_id")[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20160918013004"]]
+  [1m[35m (23.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateLoans (20160918013548)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (48.5ms)[0m  [1m[35mCREATE TABLE "loans" ("id" serial primary key, "user_id" integer, "copy_id" integer, "status_code" integer, "checkout_date" date, "return_date" date, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_c15c911198"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+, CONSTRAINT "fk_rails_e9a992e476"
+FOREIGN KEY ("copy_id")
+  REFERENCES "copies" ("id")
+)[0m
+  [1m[35m (49.2ms)[0m  [1m[35mCREATE  INDEX  "index_loans_on_user_id" ON "loans"  ("user_id")[0m
+  [1m[35m (66.2ms)[0m  [1m[35mCREATE  INDEX  "index_loans_on_copy_id" ON "loans"  ("copy_id")[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20160918013548"]]
+  [1m[35m (6.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddDeviseToUsers (20161009210306)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (115.2ms)[0m  [1m[35mALTER TABLE "users" ADD "email" character varying DEFAULT '' NOT NULL[0m
+  [1m[35m (102.6ms)[0m  [1m[35mALTER TABLE "users" ADD "encrypted_password" character varying DEFAULT '' NOT NULL[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "users" ADD "reset_password_token" character varying[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "users" ADD "reset_password_sent_at" timestamp[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "users" ADD "remember_created_at" timestamp[0m
+  [1m[35m (53.6ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  [1m[35m (63.1ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20161009210306"]]
+  [1m[35m (32.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateFriendrequests (20161017174207)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (105.7ms)[0m  [1m[35mCREATE TABLE "friendrequests" ("id" serial primary key, "sender_id" integer, "recipient_id" integer, "status" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (39.4ms)[0m  [1m[35mCREATE  INDEX  "index_friendrequests_on_sender_id" ON "friendrequests"  ("sender_id")[0m
+  [1m[35m (40.1ms)[0m  [1m[35mCREATE  INDEX  "index_friendrequests_on_recipient_id" ON "friendrequests"  ("recipient_id")[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20161017174207"]]
+  [1m[35m (19.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateFriendships (20161103015606)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (40.4ms)[0m  [1m[35mCREATE TABLE "friendships" ("id" serial primary key, "user_id" integer, "friend_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (62.4ms)[0m  [1m[35mCREATE  INDEX  "index_friendships_on_user_id" ON "friendships"  ("user_id")[0m
+  [1m[35m (38.3ms)[0m  [1m[35mCREATE  INDEX  "index_friendships_on_friend_id" ON "friendships"  ("friend_id")[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20161103015606"]]
+  [1m[35m (18.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (24.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-12-04 12:18:33.574818"], ["updated_at", "2017-12-04 12:18:33.574818"]]
+  [1m[35m (32.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_advisory_unlock(5488631408768247705)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/" for 127.0.0.1 at 2017-12-04 13:18:45 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by DemoController#welcome as HTML
+  Rendering demo/welcome.html.erb within layouts/application
+  Rendered demo/welcome.html.erb within layouts/application (254.1ms)
+Completed 200 OK in 319ms (Views: 310.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-12-04 13:18:53 +0100
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/sessions/new.html.erb within layouts/application (297.0ms)
+Completed 200 OK in 331ms (Views: 311.1ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2017-12-04 13:19:02 +0100
+Processing by Users::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered users/registrations/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 22ms (Views: 21.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-12-04 13:19:36 +0100
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5lsfp8+T1irfc4Wu3Kbky+r3beH99QOni3kMQMamJ6JikJvRkapohM1qvoQB8NY36BbKtqV7NjJlibe9S81vvA==", "user"=>{"email"=>"kenams42@gmail.com", "name"=>"kenams", "phone"=>"123456789", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "kenams42@gmail.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "phone", "created_at", "updated_at", "email", "encrypted_password") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "kenams"], ["phone", "123456789"], ["created_at", "2017-12-04 12:19:36.230414"], ["updated_at", "2017-12-04 12:19:36.230414"], ["email", "kenams42@gmail.com"], ["encrypted_password", "$2a$11$nE303ogNsdbavFVFI.xs0On6Uu2gtbgWvbQQoPtmyS51YYzCoZAEW"]]
+  [1m[35m (15.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 162ms (ActiveRecord: 16.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-04 13:19:36 +0100
+Processing by DemoController#welcome as HTML
+  Rendering demo/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mLoan Load (0.4ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+  Rendered demo/welcome.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 23ms (Views: 20.8ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/loans" for 127.0.0.1 at 2017-12-04 13:19:49 +0100
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by LoansController#index as HTML
+  [1m[36mLoan Load (0.6ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 1]]
+  [1m[36mLoan Load (0.6ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+  Rendering loans/index.html.erb within layouts/application
+  [1m[36mLoan Load (0.5ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."user_id" = 1 AND "loans"."status_code" = $1[0m  [["status_code", 1]]
+  Rendered loans/index.html.erb within layouts/application (3.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+Completed 200 OK in 28ms (Views: 21.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/users/1/friendships" for 127.0.0.1 at 2017-12-04 13:20:02 +0100
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by FriendshipsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering friendships/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "friendships" ON "users"."id" = "friendships"."friend_id" WHERE "friendships"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered friendships/index.html.erb within layouts/application (7.9ms)
+  [1m[36mLoan Load (0.3ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+Completed 200 OK in 41ms (Views: 21.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/users/1/copies/new" for 127.0.0.1 at 2017-12-04 13:20:07 +0100
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by CopiesController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering copies/new.html.erb within layouts/application
+  Rendered editions/_isbns.html.erb (0.6ms)
+  [1m[36mFormat Load (0.7ms)[0m  [1m[34mSELECT "formats".* FROM "formats"[0m
+  Rendered copies/_form.html.erb (8.0ms)
+  Rendered copies/new.html.erb within layouts/application (8.8ms)
+  [1m[36mLoan Load (0.5ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+Completed 200 OK in 37ms (Views: 19.8ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/friendrequests" for 127.0.0.1 at 2017-12-04 13:20:14 +0100
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by FriendrequestsController#index as HTML
+  Rendering friendrequests/index.html.erb within layouts/application
+  [1m[36mFriendrequest Load (0.5ms)[0m  [1m[34mSELECT "friendrequests".* FROM "friendrequests" WHERE "friendrequests"."recipient_id" = $1 AND "friendrequests"."status" = $2[0m  [["recipient_id", 1], ["status", 0]]
+  [1m[36mFriendrequest Load (1.1ms)[0m  [1m[34mSELECT "friendrequests".* FROM "friendrequests" WHERE "friendrequests"."sender_id" = $1 AND "friendrequests"."status" = $2[0m  [["sender_id", 1], ["status", 0]]
+  Rendered friendrequests/index.html.erb within layouts/application (4.3ms)
+  [1m[36mLoan Load (0.3ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+Completed 200 OK in 34ms (Views: 20.0ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/users/1/copies" for 127.0.0.1 at 2017-12-04 13:20:18 +0100
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by CopiesController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering copies/index.html.erb within layouts/application
+  [1m[36mCopy Load (3.1ms)[0m  [1m[34mSELECT "copies".* FROM "copies" WHERE "copies"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered copies/index.html.erb within layouts/application (11.4ms)
+  [1m[36mLoan Load (0.4ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+Completed 200 OK in 92ms (Views: 78.4ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/users/1/copies/new" for 127.0.0.1 at 2017-12-04 13:20:25 +0100
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by CopiesController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering copies/new.html.erb within layouts/application
+  Rendered editions/_isbns.html.erb (1.5ms)
+  [1m[36mFormat Load (0.8ms)[0m  [1m[34mSELECT "formats".* FROM "formats"[0m
+  Rendered copies/_form.html.erb (8.9ms)
+  Rendered copies/new.html.erb within layouts/application (11.2ms)
+  [1m[36mLoan Load (0.3ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+Completed 200 OK in 43ms (Views: 35.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-04 13:22:59 +0100
+Processing by DemoController#welcome as HTML
+  Rendering demo/welcome.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mLoan Load (0.7ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+  Rendered demo/welcome.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 105ms (Views: 101.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/images/sheaf-low-res.png" for 127.0.0.1 at 2017-12-04 13:22:59 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/images/sheaf-low-res.png"):
+  
+actionpack (5.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered collection of /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb [104 times] (35.0ms)
+  Rendered /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
+  Rendering /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (70.3ms)
+Started GET "/" for 127.0.0.1 at 2017-12-04 13:24:12 +0100
+Processing by DemoController#welcome as HTML
+  Rendering demo/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mLoan Load (0.3ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+  Rendered demo/welcome.html.erb within layouts/application (27.4ms)
+Completed 200 OK in 88ms (Views: 86.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/images/sheaf-low-res.png" for 127.0.0.1 at 2017-12-04 13:24:12 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/images/sheaf-low-res.png"):
+  
+actionpack (5.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered collection of /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb [104 times] (35.7ms)
+  Rendered /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendering /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (71.2ms)
+Started GET "/" for 127.0.0.1 at 2017-12-04 13:29:16 +0100
+Processing by DemoController#welcome as HTML
+  Rendering demo/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mLoan Load (0.4ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+  Rendered demo/welcome.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 73ms (Views: 71.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/images/sheaf-low-res.png" for 127.0.0.1 at 2017-12-04 13:29:16 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/images/sheaf-low-res.png"):
+  
+actionpack (5.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered collection of /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb [104 times] (29.5ms)
+  Rendered /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendering /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (60.6ms)
+Started GET "/loans" for 127.0.0.1 at 2017-12-04 13:41:18 +0100
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by LoansController#index as HTML
+  [1m[36mLoan Load (0.3ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 1]]
+  [1m[36mLoan Load (0.2ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+  Rendering loans/index.html.erb within layouts/application
+  [1m[36mLoan Load (0.3ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."user_id" = 1 AND "loans"."status_code" = $1[0m  [["status_code", 1]]
+  Rendered loans/index.html.erb within layouts/application (1.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+Completed 200 OK in 112ms (Views: 103.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/images/sheaf-low-res.png" for 127.0.0.1 at 2017-12-04 13:41:18 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/images/sheaf-low-res.png"):
+  
+actionpack (5.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.7ms)
+  Rendered collection of /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb [104 times] (18.3ms)
+  Rendered /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendering /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (40.7ms)
+Started GET "/" for 127.0.0.1 at 2017-12-04 13:41:26 +0100
+Processing by DemoController#welcome as HTML
+Started GET "/images/sheaf-low-res.png" for 127.0.0.1 at 2017-12-04 13:41:26 +0100
+  
+  Rendering demo/welcome.html.erb within layouts/application
+ActionController::RoutingError (No route matches [GET] "/images/sheaf-low-res.png"):
+  
+actionpack (5.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[36mUser Load (6.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mLoan Load (0.3ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+  Rendered demo/welcome.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 40ms (Views: 32.5ms | ActiveRecord: 6.7ms)
+
+
+  Rendering /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered collection of /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb [104 times] (17.0ms)
+  Rendered /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.7ms)
+  Rendering /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (39.0ms)
+Started GET "/users/1/copies" for 127.0.0.1 at 2017-12-04 13:41:28 +0100
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by CopiesController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering copies/index.html.erb within layouts/application
+  [1m[36mCopy Load (0.6ms)[0m  [1m[34mSELECT "copies".* FROM "copies" WHERE "copies"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered copies/index.html.erb within layouts/application (3.3ms)
+  [1m[36mLoan Load (0.2ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+Completed 200 OK in 29ms (Views: 18.6ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/images/sheaf-low-res.png" for 127.0.0.1 at 2017-12-04 13:41:29 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/images/sheaf-low-res.png"):
+  
+actionpack (5.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.7ms)
+  Rendered collection of /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb [104 times] (17.4ms)
+  Rendered /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.8ms)
+  Rendering /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (38.6ms)
+Started GET "/users/1/copies/new" for 127.0.0.1 at 2017-12-04 13:41:35 +0100
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by CopiesController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering copies/new.html.erb within layouts/application
+  Rendered editions/_isbns.html.erb (0.7ms)
+  [1m[36mFormat Load (0.3ms)[0m  [1m[34mSELECT "formats".* FROM "formats"[0m
+  Rendered copies/_form.html.erb (5.9ms)
+  Rendered copies/new.html.erb within layouts/application (7.1ms)
+  [1m[36mLoan Load (0.2ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+Completed 200 OK in 54ms (Views: 24.0ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/loans" for 127.0.0.1 at 2017-12-04 13:41:52 +0100
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by LoansController#index as HTML
+  [1m[36mLoan Load (0.4ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 1]]
+  [1m[36mLoan Load (0.6ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+  Rendering loans/index.html.erb within layouts/application
+  [1m[36mLoan Load (0.4ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."user_id" = 1 AND "loans"."status_code" = $1[0m  [["status_code", 1]]
+  Rendered loans/index.html.erb within layouts/application (4.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+Completed 200 OK in 36ms (Views: 29.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2017-12-04 13:41:59 +0100
+Processing by Users::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/registrations/edit.html.erb within layouts/application
+  Rendered users/registrations/edit.html.erb within layouts/application (3.9ms)
+  [1m[36mLoan Load (0.3ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+Completed 200 OK in 28ms (Views: 24.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/images/sheaf-low-res.png" for 127.0.0.1 at 2017-12-04 13:42:01 +0100
+Started GET "/" for 127.0.0.1 at 2017-12-04 13:42:01 +0100
+Processing by DemoController#welcome as HTML
+  
+ActionController::RoutingError (No route matches [GET] "/images/sheaf-low-res.png"):
+  
+actionpack (5.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering demo/welcome.html.erb within layouts/application
+  [1m[36mUser Load (3.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mLoan Load (2.5ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+  Rendered demo/welcome.html.erb within layouts/application (25.1ms)
+Completed 200 OK in 91ms (Views: 83.8ms | ActiveRecord: 6.2ms)
+
+
+  Rendering /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered collection of /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb [104 times] (19.3ms)
+  Rendered /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.8ms)
+  Rendering /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (42.7ms)
+Started GET "/friendrequests" for 127.0.0.1 at 2017-12-04 13:42:10 +0100
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by FriendrequestsController#index as HTML
+  Rendering friendrequests/index.html.erb within layouts/application
+  [1m[36mFriendrequest Load (0.6ms)[0m  [1m[34mSELECT "friendrequests".* FROM "friendrequests" WHERE "friendrequests"."recipient_id" = $1 AND "friendrequests"."status" = $2[0m  [["recipient_id", 1], ["status", 0]]
+  [1m[36mFriendrequest Load (0.3ms)[0m  [1m[34mSELECT "friendrequests".* FROM "friendrequests" WHERE "friendrequests"."sender_id" = $1 AND "friendrequests"."status" = $2[0m  [["sender_id", 1], ["status", 0]]
+  Rendered friendrequests/index.html.erb within layouts/application (3.3ms)
+  [1m[36mLoan Load (0.3ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+Completed 200 OK in 39ms (Views: 24.5ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/images/sheaf-low-res.png" for 127.0.0.1 at 2017-12-04 13:42:11 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/images/sheaf-low-res.png"):
+  
+actionpack (5.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered collection of /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb [104 times] (18.3ms)
+  Rendered /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendering /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (42.1ms)
+Started GET "/friendrequests" for 127.0.0.1 at 2017-12-04 13:42:27 +0100
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by FriendrequestsController#index as HTML
+  Rendering friendrequests/index.html.erb within layouts/application
+  [1m[36mFriendrequest Load (0.3ms)[0m  [1m[34mSELECT "friendrequests".* FROM "friendrequests" WHERE "friendrequests"."recipient_id" = $1 AND "friendrequests"."status" = $2[0m  [["recipient_id", 1], ["status", 0]]
+  [1m[36mFriendrequest Load (0.3ms)[0m  [1m[34mSELECT "friendrequests".* FROM "friendrequests" WHERE "friendrequests"."sender_id" = $1 AND "friendrequests"."status" = $2[0m  [["sender_id", 1], ["status", 0]]
+  Rendered friendrequests/index.html.erb within layouts/application (3.0ms)
+  [1m[36mLoan Load (0.3ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+Completed 200 OK in 26ms (Views: 22.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/friendrequests" for 127.0.0.1 at 2017-12-04 13:42:39 +0100
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by FriendrequestsController#index as HTML
+  Rendering friendrequests/index.html.erb within layouts/application
+  [1m[36mFriendrequest Load (0.6ms)[0m  [1m[34mSELECT "friendrequests".* FROM "friendrequests" WHERE "friendrequests"."recipient_id" = $1 AND "friendrequests"."status" = $2[0m  [["recipient_id", 1], ["status", 0]]
+  [1m[36mFriendrequest Load (0.6ms)[0m  [1m[34mSELECT "friendrequests".* FROM "friendrequests" WHERE "friendrequests"."sender_id" = $1 AND "friendrequests"."status" = $2[0m  [["sender_id", 1], ["status", 0]]
+  Rendered friendrequests/index.html.erb within layouts/application (4.0ms)
+  [1m[36mLoan Load (0.3ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+Completed 200 OK in 30ms (Views: 25.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-04 13:42:43 +0100
+Processing by DemoController#welcome as HTML
+  Rendering demo/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mLoan Load (0.3ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+  Rendered demo/welcome.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 28ms (Views: 26.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/images/sheaf-low-res.png" for 127.0.0.1 at 2017-12-04 13:42:43 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/images/sheaf-low-res.png"):
+  
+actionpack (5.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered collection of /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb [104 times] (16.5ms)
+  Rendered /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendering /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (40.8ms)
+Started GET "/users/1/copies/new" for 127.0.0.1 at 2017-12-04 13:42:44 +0100
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by CopiesController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering copies/new.html.erb within layouts/application
+  Rendered editions/_isbns.html.erb (1.2ms)
+  [1m[36mFormat Load (0.2ms)[0m  [1m[34mSELECT "formats".* FROM "formats"[0m
+  Rendered copies/_form.html.erb (6.1ms)
+  Rendered copies/new.html.erb within layouts/application (7.7ms)
+  [1m[36mLoan Load (0.3ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+Completed 200 OK in 31ms (Views: 28.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/images/sheaf-low-res.png" for 127.0.0.1 at 2017-12-04 13:42:44 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/images/sheaf-low-res.png"):
+  
+actionpack (5.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered collection of /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb [104 times] (19.9ms)
+  Rendered /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendering /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (44.8ms)
+Started GET "/" for 127.0.0.1 at 2017-12-04 13:42:50 +0100
+Started GET "/images/sheaf-low-res.png" for 127.0.0.1 at 2017-12-04 13:42:50 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/images/sheaf-low-res.png"):
+  
+Processing by DemoController#welcome as HTML
+actionpack (5.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering demo/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mLoan Load (1.2ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+  Rendered demo/welcome.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 36ms (Views: 33.3ms | ActiveRecord: 1.6ms)
+
+
+  Rendering /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered collection of /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb [104 times] (19.8ms)
+  Rendered /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendering /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (45.1ms)
+Started GET "/" for 127.0.0.1 at 2017-12-04 13:46:14 +0100
+Processing by DemoController#welcome as HTML
+  Rendering demo/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mLoan Load (0.4ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+  Rendered demo/welcome.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 38ms (Views: 35.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-04 13:48:24 +0100
+Processing by DemoController#welcome as HTML
+  Rendering demo/welcome.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mLoan Load (0.8ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+  Rendered demo/welcome.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 72ms (Views: 68.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-04 13:48:49 +0100
+Processing by DemoController#welcome as HTML
+  Rendering demo/welcome.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mLoan Load (0.8ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+  Rendered demo/welcome.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 84ms (Views: 80.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-04 13:50:06 +0100
+Processing by DemoController#welcome as HTML
+  Rendering demo/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mLoan Load (0.3ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+  Rendered demo/welcome.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 20ms (Views: 18.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-04 13:51:42 +0100
+Processing by DemoController#welcome as HTML
+  Rendering demo/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mLoan Load (0.6ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+  Rendered demo/welcome.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 55ms (Views: 52.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-04 13:52:28 +0100
+Processing by DemoController#welcome as HTML
+  Rendering demo/welcome.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mLoan Load (3.2ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+  Rendered demo/welcome.html.erb within layouts/application (18.1ms)
+Completed 200 OK in 57ms (Views: 51.4ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-04 13:52:29 +0100
+Processing by DemoController#welcome as HTML
+  Rendering demo/welcome.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mLoan Load (0.5ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+  Rendered demo/welcome.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 34ms (Views: 31.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-04 13:52:42 +0100
+Processing by DemoController#welcome as HTML
+  Rendering demo/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mLoan Load (0.6ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+  Rendered demo/welcome.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 26ms (Views: 24.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-04 13:53:34 +0100
+Processing by DemoController#welcome as HTML
+  Rendering demo/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mLoan Load (0.4ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+  Rendered demo/welcome.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 61ms (Views: 59.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-04 13:53:45 +0100
+Processing by DemoController#welcome as HTML
+  Rendering demo/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mLoan Load (0.5ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+  Rendered demo/welcome.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 33ms (Views: 30.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/1/copies/new" for 127.0.0.1 at 2017-12-04 13:53:47 +0100
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by CopiesController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering copies/new.html.erb within layouts/application
+  Rendered editions/_isbns.html.erb (1.3ms)
+  [1m[36mFormat Load (0.3ms)[0m  [1m[34mSELECT "formats".* FROM "formats"[0m
+  Rendered copies/_form.html.erb (6.4ms)
+  Rendered copies/new.html.erb within layouts/application (7.9ms)
+  [1m[36mLoan Load (0.3ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+Completed 200 OK in 32ms (Views: 28.9ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/copies" for 127.0.0.1 at 2017-12-04 13:56:39 +0100
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by CopiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Sr8L2k4m97sNJiZhiLMKeg9JvZyV4tyi84yQJ4QKJkBFyjn88hDno+BqSh+OyPxClMcEgOpRuodqyGcRRuGgQA==", "edition"=>{"isbn13"=>"", "isbn10"=>"", "publication_year"=>"August 2017"}, "author"=>{"name"=>" Influential Individuals"}, "work"=>{"title"=>"Bill Gates: The Life, Lessons & Rules For Success"}, "publisher"=>{"name"=>"Independently published"}, "copy"=>{"url"=>"", "acquisition_date"=>"2017-12-04"}, "commit"=>"Submit"}
+  [1m[36mAuthor Load (1.7ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."name" = $1 LIMIT $2[0m  [["name", " Influential Individuals"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAuthor Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "authors" WHERE "authors"."name" = $1 LIMIT $2[0m  [["name", " Influential Individuals"], ["LIMIT", 1]]
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "authors" ("name") VALUES ($1) RETURNING "id"[0m  [["name", " Influential Individuals"]]
+  [1m[35m (34.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mWork Load (0.6ms)[0m  [1m[34mSELECT  "works".* FROM "works" WHERE "works"."title" = $1 AND "works"."author_id" = $2 LIMIT $3[0m  [["title", "Bill Gates: The Life, Lessons & Rules For Success"], ["author_id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "works" ("title", "author_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Bill Gates: The Life, Lessons & Rules For Success"], ["author_id", 1], ["created_at", "2017-12-04 12:56:40.108212"], ["updated_at", "2017-12-04 12:56:40.108212"]]
+  [1m[35m (16.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPublisher Load (0.5ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."name" = $1 LIMIT $2[0m  [["name", "Independently published"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPublisher Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "publishers" WHERE "publishers"."name" = $1 LIMIT $2[0m  [["name", "Independently published"], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "publishers" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Independently published"], ["created_at", "2017-12-04 12:56:40.146560"], ["updated_at", "2017-12-04 12:56:40.146560"]]
+  [1m[35m (11.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mEdition Load (0.7ms)[0m  [1m[34mSELECT  "editions".* FROM "editions" WHERE "editions"."publication_year" = $1 AND "editions"."isbn10" = $2 AND "editions"."isbn13" = $3 AND "editions"."work_id" = $4 AND "editions"."publisher_id" IS NULL LIMIT $5[0m  [["publication_year", 0], ["isbn10", ""], ["isbn13", ""], ["work_id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWork Load (0.3ms)[0m  [1m[34mSELECT  "works".* FROM "works" WHERE "works"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mCopy Load (0.6ms)[0m  [1m[34mSELECT  "copies".* FROM "copies" WHERE "copies"."acquisition_date" = $1 AND "copies"."url" = $2 AND "copies"."edition_id" IS NULL AND "copies"."user_id" = $3 LIMIT $4[0m  [["acquisition_date", "2017-12-04"], ["url", ""], ["user_id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  Rendering copies/new.html.erb within layouts/application
+  Rendered editions/_isbns.html.erb (0.6ms)
+  [1m[36mFormat Load (0.2ms)[0m  [1m[34mSELECT "formats".* FROM "formats"[0m
+  Rendered copies/_form.html.erb (5.1ms)
+  Rendered copies/new.html.erb within layouts/application (7.1ms)
+  [1m[36mLoan Load (0.2ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+Completed 200 OK in 229ms (Views: 21.5ms | ActiveRecord: 96.3ms)
+
+
+Started POST "/copies" for 127.0.0.1 at 2017-12-04 13:58:29 +0100
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by CopiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uTRRv5oFj/4CSKaQzC5IYE3Gd0JGxGJTDAFxGVEVJFx5RAC27G2WbYj/tUCeocPvGtNF8l9NRtFYCz6GKvrXYQ==", "author"=>{"name"=>" Influential Individuals"}, "work"=>{"title"=>"Bill Gates: The Life, Lessons & Rules For Success"}, "publisher"=>{"name"=>"Independently published"}, "edition"=>{"publication_year"=>"August 2017"}, "copy"=>{"url"=>"https://www.amazon.com/dp/1522018557/ref=olp_product_details?_encoding=UTF8&me=", "acquisition_date"=>"2017-12-04"}, "commit"=>"Submit"}
+  [1m[36mAuthor Load (0.9ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."name" = $1 LIMIT $2[0m  [["name", " Influential Individuals"], ["LIMIT", 1]]
+  [1m[36mWork Load (0.8ms)[0m  [1m[34mSELECT  "works".* FROM "works" WHERE "works"."title" = $1 AND "works"."author_id" = $2 LIMIT $3[0m  [["title", "Bill Gates: The Life, Lessons & Rules For Success"], ["author_id", 1], ["LIMIT", 1]]
+  [1m[36mPublisher Load (0.4ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."name" = $1 LIMIT $2[0m  [["name", "Independently published"], ["LIMIT", 1]]
+  [1m[36mEdition Load (0.5ms)[0m  [1m[34mSELECT  "editions".* FROM "editions" WHERE "editions"."publication_year" = $1 AND "editions"."work_id" = $2 AND "editions"."publisher_id" IS NULL LIMIT $3[0m  [["publication_year", 0], ["work_id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWork Load (0.2ms)[0m  [1m[34mSELECT  "works".* FROM "works" WHERE "works"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mCopy Load (0.5ms)[0m  [1m[34mSELECT  "copies".* FROM "copies" WHERE "copies"."acquisition_date" = $1 AND "copies"."url" = $2 AND "copies"."edition_id" IS NULL AND "copies"."user_id" = $3 LIMIT $4[0m  [["acquisition_date", "2017-12-04"], ["url", "https://www.amazon.com/dp/1522018557/ref=olp_product_details?_encoding=UTF8&me="], ["user_id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  Rendering copies/new.html.erb within layouts/application
+  Rendered editions/_isbns.html.erb (1.0ms)
+  [1m[36mFormat Load (0.2ms)[0m  [1m[34mSELECT "formats".* FROM "formats"[0m
+  Rendered copies/_form.html.erb (4.7ms)
+  Rendered copies/new.html.erb within layouts/application (6.3ms)
+  [1m[36mLoan Load (0.3ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+Completed 200 OK in 37ms (Views: 20.3ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-04 13:58:47 +0100
+Processing by DemoController#welcome as HTML
+  Rendering demo/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mLoan Load (0.4ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+  Rendered demo/welcome.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 30ms (Views: 28.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/1/copies" for 127.0.0.1 at 2017-12-04 13:58:50 +0100
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by CopiesController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering copies/index.html.erb within layouts/application
+  [1m[36mCopy Load (1.0ms)[0m  [1m[34mSELECT "copies".* FROM "copies" WHERE "copies"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered copies/index.html.erb within layouts/application (3.8ms)
+  [1m[36mLoan Load (0.2ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+Completed 200 OK in 39ms (Views: 33.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/users/1/copies/new" for 127.0.0.1 at 2017-12-04 13:58:52 +0100
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by CopiesController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering copies/new.html.erb within layouts/application
+  Rendered editions/_isbns.html.erb (1.0ms)
+  [1m[36mFormat Load (0.8ms)[0m  [1m[34mSELECT "formats".* FROM "formats"[0m
+  Rendered copies/_form.html.erb (7.7ms)
+  Rendered copies/new.html.erb within layouts/application (9.2ms)
+  [1m[36mLoan Load (0.3ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+Completed 200 OK in 34ms (Views: 29.3ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-04 13:58:55 +0100
+Processing by DemoController#welcome as HTML
+  Rendering demo/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mLoan Load (1.1ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+  Rendered demo/welcome.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 53ms (Views: 49.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/friendrequests" for 127.0.0.1 at 2017-12-04 13:58:58 +0100
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by FriendrequestsController#index as HTML
+  Rendering friendrequests/index.html.erb within layouts/application
+  [1m[36mFriendrequest Load (1.1ms)[0m  [1m[34mSELECT "friendrequests".* FROM "friendrequests" WHERE "friendrequests"."recipient_id" = $1 AND "friendrequests"."status" = $2[0m  [["recipient_id", 1], ["status", 0]]
+  [1m[36mFriendrequest Load (1.1ms)[0m  [1m[34mSELECT "friendrequests".* FROM "friendrequests" WHERE "friendrequests"."sender_id" = $1 AND "friendrequests"."status" = $2[0m  [["sender_id", 1], ["status", 0]]
+  Rendered friendrequests/index.html.erb within layouts/application (10.6ms)
+  [1m[36mLoan Load (0.3ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+Completed 200 OK in 62ms (Views: 50.9ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/friendrequests/new" for 127.0.0.1 at 2017-12-04 13:59:00 +0100
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by FriendrequestsController#new as HTML
+  Rendering friendrequests/new.html.erb within layouts/application
+  Rendered friendrequests/new.html.erb within layouts/application (0.6ms)
+  [1m[36mLoan Load (0.2ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+Completed 200 OK in 29ms (Views: 19.0ms | ActiveRecord: 2.5ms)
+
+
+Started POST "/friendrequests" for 127.0.0.1 at 2017-12-04 13:59:12 +0100
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by FriendrequestsController#create as HTML
+  Parameters: {"friendrequest"=>{"recipient_id"=>"kenams42@gmail.com"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1[0m  [["email", "kenams42@gmail.com"]]
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "friendrequests" WHERE "friendrequests"."recipient_id" = $1 AND "friendrequests"."sender_id" = $2 AND "friendrequests"."status" = $3[0m  [["recipient_id", 1], ["sender_id", 1], ["status", 0]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "friendrequests" WHERE "friendrequests"."recipient_id" = $1 AND "friendrequests"."sender_id" = $2 AND "friendrequests"."status" = $3[0m  [["recipient_id", 1], ["sender_id", 1], ["status", 0]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "friendships" ON "users"."id" = "friendships"."friend_id" WHERE "friendships"."user_id" = $1 AND "users"."id" = $2 LIMIT $3[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "friendrequests" ("sender_id", "recipient_id", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["sender_id", 1], ["recipient_id", 1], ["status", 0], ["created_at", "2017-12-04 12:59:12.778744"], ["updated_at", "2017-12-04 12:59:12.778744"]]
+  [1m[35m (47.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/friendrequests
+Completed 302 Found in 75ms (ActiveRecord: 50.5ms)
+
+
+Started GET "/friendrequests" for 127.0.0.1 at 2017-12-04 13:59:12 +0100
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by FriendrequestsController#index as HTML
+  Rendering friendrequests/index.html.erb within layouts/application
+  [1m[36mFriendrequest Load (0.4ms)[0m  [1m[34mSELECT "friendrequests".* FROM "friendrequests" WHERE "friendrequests"."recipient_id" = $1 AND "friendrequests"."status" = $2[0m  [["recipient_id", 1], ["status", 0]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFriendrequest Load (0.4ms)[0m  [1m[34mSELECT "friendrequests".* FROM "friendrequests" WHERE "friendrequests"."sender_id" = $1 AND "friendrequests"."status" = $2[0m  [["sender_id", 1], ["status", 0]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered friendrequests/index.html.erb within layouts/application (7.8ms)
+  [1m[36mLoan Load (0.2ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+Completed 200 OK in 31ms (Views: 26.0ms | ActiveRecord: 1.3ms)
+
+
+Started PUT "/friendrequests/1" for 127.0.0.1 at 2017-12-04 13:59:18 +0100
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by FriendrequestsController#update as HTML
+  Parameters: {"authenticity_token"=>"dSWhw6sc8xdYRWYZTPIL1y8FZwjoWEY3lr49iUYT+6e1VfDK3XTqhNLydckefYBYeBBVuPHRYrXCtHIWPfwImg==", "id"=>"1"}
+  [1m[36mFriendrequest Load (0.3ms)[0m  [1m[34mSELECT  "friendrequests".* FROM "friendrequests" WHERE "friendrequests"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "friendships" ("user_id", "friend_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 1], ["friend_id", 1], ["created_at", "2017-12-04 12:59:18.357039"], ["updated_at", "2017-12-04 12:59:18.357039"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "friendships" WHERE "friendships"."user_id" = $1 AND "friendships"."friend_id" = $2[0m  [["user_id", 1], ["friend_id", 1]]
+  [1m[35m (26.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mFriendrequest Load (0.3ms)[0m  [1m[34mSELECT  "friendrequests".* FROM "friendrequests" WHERE "friendrequests"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "friendrequests" SET "status" = $1, "updated_at" = $2 WHERE "friendrequests"."id" = $3[0m  [["status", 1], ["updated_at", "2017-12-04 12:59:18.388849"], ["id", 1]]
+  [1m[35m (6.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/friendrequests
+Completed 302 Found in 50ms (ActiveRecord: 38.3ms)
+
+
+Started GET "/friendrequests" for 127.0.0.1 at 2017-12-04 13:59:18 +0100
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by FriendrequestsController#index as HTML
+  Rendering friendrequests/index.html.erb within layouts/application
+  [1m[36mFriendrequest Load (0.2ms)[0m  [1m[34mSELECT "friendrequests".* FROM "friendrequests" WHERE "friendrequests"."recipient_id" = $1 AND "friendrequests"."status" = $2[0m  [["recipient_id", 1], ["status", 0]]
+  [1m[36mFriendrequest Load (0.2ms)[0m  [1m[34mSELECT "friendrequests".* FROM "friendrequests" WHERE "friendrequests"."sender_id" = $1 AND "friendrequests"."status" = $2[0m  [["sender_id", 1], ["status", 0]]
+  Rendered friendrequests/index.html.erb within layouts/application (1.7ms)
+  [1m[36mLoan Load (0.2ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+Completed 200 OK in 17ms (Views: 14.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-04 13:59:22 +0100
+Processing by DemoController#welcome as HTML
+  Rendering demo/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mLoan Load (2.2ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+  Rendered demo/welcome.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 30ms (Views: 26.8ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/users/1/friendships" for 127.0.0.1 at 2017-12-04 13:59:24 +0100
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by FriendshipsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering friendships/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "friendships" ON "users"."id" = "friendships"."friend_id" WHERE "friendships"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered friendships/index.html.erb within layouts/application (5.3ms)
+  [1m[36mLoan Load (0.3ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+Completed 200 OK in 31ms (Views: 29.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/1/copies" for 127.0.0.1 at 2017-12-04 13:59:25 +0100
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by CopiesController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering copies/index.html.erb within layouts/application
+  [1m[36mCopy Load (0.5ms)[0m  [1m[34mSELECT "copies".* FROM "copies" WHERE "copies"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered copies/index.html.erb within layouts/application (2.8ms)
+  [1m[36mLoan Load (0.3ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+Completed 200 OK in 36ms (Views: 29.1ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/users/1/copies/new" for 127.0.0.1 at 2017-12-04 13:59:27 +0100
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by CopiesController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering copies/new.html.erb within layouts/application
+  Rendered editions/_isbns.html.erb (1.2ms)
+  [1m[36mFormat Load (0.3ms)[0m  [1m[34mSELECT "formats".* FROM "formats"[0m
+  Rendered copies/_form.html.erb (6.7ms)
+  Rendered copies/new.html.erb within layouts/application (8.4ms)
+  [1m[36mLoan Load (0.2ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+Completed 200 OK in 33ms (Views: 27.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-04 13:59:29 +0100
+Processing by DemoController#welcome as HTML
+  Rendering demo/welcome.html.erb within layouts/application
+  [1m[36mUser Load (3.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mLoan Load (1.9ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+  Rendered demo/welcome.html.erb within layouts/application (21.8ms)
+Completed 200 OK in 88ms (Views: 80.8ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/loans" for 127.0.0.1 at 2017-12-04 13:59:34 +0100
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by LoansController#index as HTML
+  [1m[36mLoan Load (0.6ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 1]]
+  [1m[36mLoan Load (0.4ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+  Rendering loans/index.html.erb within layouts/application
+  [1m[36mLoan Load (0.6ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."user_id" = 1 AND "loans"."status_code" = $1[0m  [["status_code", 1]]
+  Rendered loans/index.html.erb within layouts/application (3.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+Completed 200 OK in 33ms (Views: 26.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-04 13:59:40 +0100
+Processing by DemoController#welcome as HTML
+  Rendering demo/welcome.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mLoan Load (0.9ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+  Rendered demo/welcome.html.erb within layouts/application (22.6ms)
+Completed 200 OK in 80ms (Views: 77.0ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/users/1/copies/new" for 127.0.0.1 at 2017-12-04 14:00:55 +0100
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by CopiesController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering copies/new.html.erb within layouts/application
+  Rendered editions/_isbns.html.erb (1.1ms)
+  [1m[36mFormat Load (0.3ms)[0m  [1m[34mSELECT "formats".* FROM "formats"[0m
+  Rendered copies/_form.html.erb (7.6ms)
+  Rendered copies/new.html.erb within layouts/application (9.7ms)
+  [1m[36mLoan Load (0.3ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+Completed 200 OK in 40ms (Views: 34.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-04 14:01:24 +0100
+Processing by DemoController#welcome as HTML
+  Rendering demo/welcome.html.erb within layouts/application
+  [1m[36mUser Load (4.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mLoan Load (0.9ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+  Rendered demo/welcome.html.erb within layouts/application (16.4ms)
+Completed 200 OK in 55ms (Views: 47.9ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-04 14:01:24 +0100
+Processing by DemoController#welcome as HTML
+  Rendering demo/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mLoan Load (0.2ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+  Rendered demo/welcome.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 18ms (Views: 16.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-04 14:01:37 +0100
+Processing by DemoController#welcome as HTML
+  Rendering demo/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mLoan Load (0.6ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+  Rendered demo/welcome.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 50ms (Views: 48.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-04 14:02:00 +0100
+Processing by DemoController#welcome as HTML
+  Rendering demo/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mLoan Load (0.9ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+  Rendered demo/welcome.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 50ms (Views: 47.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/users/1/copies/new" for 127.0.0.1 at 2017-12-04 14:02:35 +0100
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by CopiesController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering copies/new.html.erb within layouts/application
+  Rendered editions/_isbns.html.erb (2.3ms)
+  [1m[36mFormat Load (0.5ms)[0m  [1m[34mSELECT "formats".* FROM "formats"[0m
+  Rendered copies/_form.html.erb (7.8ms)
+  Rendered copies/new.html.erb within layouts/application (9.5ms)
+  [1m[36mLoan Load (0.3ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+Completed 200 OK in 36ms (Views: 32.7ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/copies" for 127.0.0.1 at 2017-12-04 14:05:24 +0100
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by CopiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kqKDXE2EpYTPyYtYjcBmcVSAuQvRyKztSmV0QJ+2K8ed17F68bK1nCKF5yaLu5BJzw4AF657ysjTIYN2XV2txw==", "edition"=>{"isbn13"=>"", "isbn10"=>"", "publication_year"=>"2016"}, "author"=>{"name"=>"Solveig GODELUCK"}, "work"=>{"title"=>"Xavier Niel - La voie du pirate"}, "publisher"=>{"name"=>"Xavier Niel"}, "copy"=>{"url"=>"https://www.amazon.fr/gp/product/2754081941/ref=s9u_simh_gw_i2?ie=UTF8&pd_rd_i=2754081941&pd_rd_r=b5aba70d-d8f2-11e7-a326-27fe678da0b6&pd_rd_w=MTYtq&pd_rd_wg=2Q4cR&pf_rd_m=A1X6FK5RDHNB96&pf_rd_s=&pf_rd_r=QWWE13PJQXF6AM4ND2SD&pf_rd_t=36701&pf_rd_p=74c057ad-073f-4101-8de0-0fc75f2333b3&pf_rd_i=desktop", "acquisition_date"=>"2017-12-04"}, "commit"=>"Submit"}
+  [1m[36mAuthor Load (0.6ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."name" = $1 LIMIT $2[0m  [["name", "Solveig GODELUCK"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAuthor Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "authors" WHERE "authors"."name" = $1 LIMIT $2[0m  [["name", "Solveig GODELUCK"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "authors" ("name") VALUES ($1) RETURNING "id"[0m  [["name", "Solveig GODELUCK"]]
+  [1m[35m (44.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mWork Load (1.6ms)[0m  [1m[34mSELECT  "works".* FROM "works" WHERE "works"."title" = $1 AND "works"."author_id" = $2 LIMIT $3[0m  [["title", "Xavier Niel - La voie du pirate"], ["author_id", 2], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAuthor Load (0.6ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "works" ("title", "author_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Xavier Niel - La voie du pirate"], ["author_id", 2], ["created_at", "2017-12-04 13:05:24.328117"], ["updated_at", "2017-12-04 13:05:24.328117"]]
+  [1m[35m (36.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPublisher Load (2.2ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."name" = $1 LIMIT $2[0m  [["name", "Xavier Niel"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPublisher Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "publishers" WHERE "publishers"."name" = $1 LIMIT $2[0m  [["name", "Xavier Niel"], ["LIMIT", 1]]
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "publishers" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Xavier Niel"], ["created_at", "2017-12-04 13:05:24.378225"], ["updated_at", "2017-12-04 13:05:24.378225"]]
+  [1m[35m (32.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mEdition Load (1.5ms)[0m  [1m[34mSELECT  "editions".* FROM "editions" WHERE "editions"."publication_year" = $1 AND "editions"."isbn10" = $2 AND "editions"."isbn13" = $3 AND "editions"."work_id" = $4 AND "editions"."publisher_id" IS NULL LIMIT $5[0m  [["publication_year", 2016], ["isbn10", ""], ["isbn13", ""], ["work_id", 2], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWork Load (0.5ms)[0m  [1m[34mSELECT  "works".* FROM "works" WHERE "works"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mCopy Load (1.3ms)[0m  [1m[34mSELECT  "copies".* FROM "copies" WHERE "copies"."acquisition_date" = $1 AND "copies"."url" = $2 AND "copies"."edition_id" IS NULL AND "copies"."user_id" = $3 LIMIT $4[0m  [["acquisition_date", "2017-12-04"], ["url", "https://www.amazon.fr/gp/product/2754081941/ref=s9u_simh_gw_i2?ie=UTF8&pd_rd_i=2754081941&pd_rd_r=b5aba70d-d8f2-11e7-a326-27fe678da0b6&pd_rd_w=MTYtq&pd_rd_wg=2Q4cR&pf_rd_m=A1X6FK5RDHNB96&pf_rd_s=&pf_rd_r=QWWE13PJQXF6AM4ND2SD&pf_rd_t=36701&pf_rd_p=74c057ad-073f-4101-8de0-0fc75f2333b3&pf_rd_i=desktop"], ["user_id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  Rendering copies/new.html.erb within layouts/application
+  Rendered editions/_isbns.html.erb (0.8ms)
+  [1m[36mFormat Load (0.2ms)[0m  [1m[34mSELECT "formats".* FROM "formats"[0m
+  Rendered copies/_form.html.erb (4.7ms)
+  Rendered copies/new.html.erb within layouts/application (7.6ms)
+  [1m[36mLoan Load (0.3ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+Completed 200 OK in 203ms (Views: 25.1ms | ActiveRecord: 128.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-04 14:06:57 +0100
+Processing by DemoController#welcome as HTML
+  Rendering demo/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mLoan Load (0.5ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+  Rendered demo/welcome.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 31ms (Views: 28.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/1/copies/new" for 127.0.0.1 at 2017-12-04 14:07:01 +0100
+  [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by CopiesController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering copies/new.html.erb within layouts/application
+  Rendered editions/_isbns.html.erb (1.0ms)
+  [1m[36mFormat Load (1.6ms)[0m  [1m[34mSELECT "formats".* FROM "formats"[0m
+  Rendered copies/_form.html.erb (8.2ms)
+  Rendered copies/new.html.erb within layouts/application (9.8ms)
+  [1m[36mLoan Load (0.2ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+Completed 200 OK in 31ms (Views: 26.1ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-04 14:08:19 +0100
+Processing by DemoController#welcome as HTML
+  Rendering demo/welcome.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mLoan Load (0.4ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+  Rendered demo/welcome.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 49ms (Views: 43.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/users/1/copies/new" for 127.0.0.1 at 2017-12-04 14:12:46 +0100
+  
+LoadError (cannot load such file -- /home/kenams/Documents/RUBY-RAILS/Exercise-Rails/sheaf/config/routes.rb):
+  
+activesupport (5.0.6) lib/active_support/dependencies.rb:287:in `load'
+activesupport (5.0.6) lib/active_support/dependencies.rb:287:in `block in load'
+activesupport (5.0.6) lib/active_support/dependencies.rb:259:in `load_dependency'
+activesupport (5.0.6) lib/active_support/dependencies.rb:287:in `load'
+railties (5.0.6) lib/rails/application/routes_reloader.rb:40:in `block in load_paths'
+railties (5.0.6) lib/rails/application/routes_reloader.rb:40:in `each'
+railties (5.0.6) lib/rails/application/routes_reloader.rb:40:in `load_paths'
+railties (5.0.6) lib/rails/application/routes_reloader.rb:16:in `reload!'
+railties (5.0.6) lib/rails/application/routes_reloader.rb:26:in `block in updater'
+activesupport (5.0.6) lib/active_support/file_update_checker.rb:77:in `execute'
+railties (5.0.6) lib/rails/application/routes_reloader.rb:7:in `execute'
+railties (5.0.6) lib/rails/application/finisher.rb:132:in `block (2 levels) in <module:Finisher>'
+activesupport (5.0.6) lib/active_support/callbacks.rb:396:in `instance_exec'
+activesupport (5.0.6) lib/active_support/callbacks.rb:396:in `block in make_lambda'
+activesupport (5.0.6) lib/active_support/callbacks.rb:169:in `block (2 levels) in halting'
+activesupport (5.0.6) lib/active_support/callbacks.rb:547:in `block (2 levels) in default_terminator'
+activesupport (5.0.6) lib/active_support/callbacks.rb:546:in `catch'
+activesupport (5.0.6) lib/active_support/callbacks.rb:546:in `block in default_terminator'
+activesupport (5.0.6) lib/active_support/callbacks.rb:170:in `block in halting'
+activesupport (5.0.6) lib/active_support/callbacks.rb:454:in `block in call'
+activesupport (5.0.6) lib/active_support/callbacks.rb:454:in `each'
+activesupport (5.0.6) lib/active_support/callbacks.rb:454:in `call'
+activesupport (5.0.6) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+activesupport (5.0.6) lib/active_support/callbacks.rb:750:in `_run_run_callbacks'
+activesupport (5.0.6) lib/active_support/callbacks.rb:90:in `run_callbacks'
+activesupport (5.0.6) lib/active_support/execution_wrapper.rb:108:in `run!'
+activesupport (5.0.6) lib/active_support/reloader.rb:113:in `run!'
+activesupport (5.0.6) lib/active_support/execution_wrapper.rb:70:in `block in run!'
+activesupport (5.0.6) lib/active_support/execution_wrapper.rb:67:in `tap'
+activesupport (5.0.6) lib/active_support/execution_wrapper.rb:67:in `run!'
+activesupport (5.0.6) lib/active_support/reloader.rb:59:in `run!'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:10:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.5ms)
+  Rendering /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (18.3ms)
+Started GET "/" for 127.0.0.1 at 2017-12-04 14:13:00 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+actionpack (5.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendering /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/kenams/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (25.7ms)
+Started GET "/" for 127.0.0.1 at 2017-12-04 14:13:46 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by DemoController#welcome as HTML
+  Rendering demo/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mLoan Load (0.4ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+  Rendered demo/welcome.html.erb within layouts/application (143.7ms)
+Completed 200 OK in 176ms (Views: 162.4ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/users/1/friendships" for 127.0.0.1 at 2017-12-04 14:14:08 +0100
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by FriendshipsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering friendships/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "friendships" ON "users"."id" = "friendships"."friend_id" WHERE "friendships"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered friendships/index.html.erb within layouts/application (19.9ms)
+  [1m[36mLoan Load (0.3ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+Completed 200 OK in 64ms (Views: 47.1ms | ActiveRecord: 1.7ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2017-12-04 14:14:14 +0100
+Processing by Users::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/MGoF085gxSkNLly0WYJuVWsHNTedgLgoxNkgteE9QU8sfkeOVGahy6DqqKD6YI2ArkuZMf/JmL3GSsdrGsGOA=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 298ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-04 14:14:14 +0100
+Processing by DemoController#welcome as HTML
+  Rendering demo/welcome.html.erb within layouts/application
+  Rendered demo/welcome.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 18ms (Views: 17.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-04 14:14:37 +0100
+Processing by DemoController#welcome as HTML
+  Rendering demo/welcome.html.erb within layouts/application
+  Rendered demo/welcome.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 22ms (Views: 21.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-12-04 14:15:29 +0100
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/sessions/new.html.erb within layouts/application (22.1ms)
+Completed 200 OK in 58ms (Views: 51.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2017-12-04 14:15:37 +0100
+Processing by Users::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Qf/o8xkSHev8L7u0W6vLZWAdAHgYd6deyuotcRS5saTGe78caHmZz6JYOKJeNpJWXFuqA+4PuxOZDRSQn/CuCg==", "user"=>{"email"=>"kenams42@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "kenams42@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 137ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-04 14:15:37 +0100
+Processing by DemoController#welcome as HTML
+  Rendering demo/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mLoan Load (0.2ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+  Rendered demo/welcome.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 17ms (Views: 15.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/loans" for 127.0.0.1 at 2017-12-04 14:15:43 +0100
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by LoansController#index as HTML
+  [1m[36mLoan Load (2.0ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 1]]
+  [1m[36mLoan Load (1.3ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+  Rendering loans/index.html.erb within layouts/application
+  [1m[36mLoan Load (0.4ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."user_id" = 1 AND "loans"."status_code" = $1[0m  [["status_code", 1]]
+  Rendered loans/index.html.erb within layouts/application (2.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+Completed 200 OK in 26ms (Views: 18.4ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-04 14:16:00 +0100
+Processing by DemoController#welcome as HTML
+  Rendering demo/welcome.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mLoan Load (2.5ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+  Rendered demo/welcome.html.erb within layouts/application (18.7ms)
+Completed 200 OK in 60ms (Views: 55.0ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/users/1/copies" for 127.0.0.1 at 2017-12-04 14:16:02 +0100
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by CopiesController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (4.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering copies/index.html.erb within layouts/application
+  [1m[36mCopy Load (0.4ms)[0m  [1m[34mSELECT "copies".* FROM "copies" WHERE "copies"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered copies/index.html.erb within layouts/application (1.8ms)
+  [1m[36mLoan Load (0.3ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+Completed 200 OK in 32ms (Views: 16.5ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-04 14:18:31 +0100
+Processing by DemoController#welcome as HTML
+  Rendering demo/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mLoan Load (0.5ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+  Rendered demo/welcome.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 36ms (Views: 33.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-04 14:18:31 +0100
+Processing by DemoController#welcome as HTML
+  Rendering demo/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mLoan Load (0.4ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+  Rendered demo/welcome.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 18ms (Views: 17.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/1/copies/new" for 127.0.0.1 at 2017-12-04 14:18:35 +0100
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by CopiesController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering copies/new.html.erb within layouts/application
+  Rendered editions/_isbns.html.erb (1.1ms)
+  [1m[36mFormat Load (0.3ms)[0m  [1m[34mSELECT "formats".* FROM "formats"[0m
+  Rendered copies/_form.html.erb (8.9ms)
+  Rendered copies/new.html.erb within layouts/application (10.5ms)
+  [1m[36mLoan Load (0.3ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+Completed 200 OK in 41ms (Views: 26.9ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/users/1/copies" for 127.0.0.1 at 2017-12-04 14:18:41 +0100
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by CopiesController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering copies/index.html.erb within layouts/application
+  [1m[36mCopy Load (0.4ms)[0m  [1m[34mSELECT "copies".* FROM "copies" WHERE "copies"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered copies/index.html.erb within layouts/application (3.3ms)
+  [1m[36mLoan Load (0.3ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+Completed 200 OK in 30ms (Views: 26.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-04 14:18:47 +0100
+Processing by DemoController#welcome as HTML
+  Rendering demo/welcome.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mLoan Load (1.1ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+  Rendered demo/welcome.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 44ms (Views: 39.8ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/friendrequests" for 127.0.0.1 at 2017-12-04 14:18:49 +0100
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by FriendrequestsController#index as HTML
+  Rendering friendrequests/index.html.erb within layouts/application
+  [1m[36mFriendrequest Load (0.4ms)[0m  [1m[34mSELECT "friendrequests".* FROM "friendrequests" WHERE "friendrequests"."recipient_id" = $1 AND "friendrequests"."status" = $2[0m  [["recipient_id", 1], ["status", 0]]
+  [1m[36mFriendrequest Load (0.2ms)[0m  [1m[34mSELECT "friendrequests".* FROM "friendrequests" WHERE "friendrequests"."sender_id" = $1 AND "friendrequests"."status" = $2[0m  [["sender_id", 1], ["status", 0]]
+  Rendered friendrequests/index.html.erb within layouts/application (2.9ms)
+  [1m[36mLoan Load (0.3ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+Completed 200 OK in 36ms (Views: 20.4ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-04 14:18:53 +0100
+Processing by DemoController#welcome as HTML
+  Rendering demo/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mLoan Load (0.4ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+  Rendered demo/welcome.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 33ms (Views: 31.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/loans" for 127.0.0.1 at 2017-12-04 14:18:55 +0100
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by LoansController#index as HTML
+  [1m[36mLoan Load (1.0ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 1]]
+  [1m[36mLoan Load (1.0ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+  Rendering loans/index.html.erb within layouts/application
+  [1m[36mLoan Load (0.6ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."user_id" = 1 AND "loans"."status_code" = $1[0m  [["status_code", 1]]
+  Rendered loans/index.html.erb within layouts/application (4.8ms)
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+Completed 200 OK in 47ms (Views: 34.7ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-04 14:18:57 +0100
+Processing by DemoController#welcome as HTML
+  Rendering demo/welcome.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mLoan Load (1.0ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."status_code" = $1[0m  [["status_code", 0]]
+  Rendered demo/welcome.html.erb within layouts/application (18.7ms)
+Completed 200 OK in 74ms (Views: 70.3ms | ActiveRecord: 2.3ms)
+
+
